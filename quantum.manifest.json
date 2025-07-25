@@ -1,0 +1,63 @@
+{
+  "capsuleID": "capsule-gen-3f327ca1-e4a4-436a-af49-5491f92fe082",
+  "components": {
+    "buildConfigs": 0,
+    "configurations": 1,
+    "dependencies": 1,
+    "deployment": 2,
+    "documentation": 1,
+    "scripts": 1,
+    "sourceFiles": 20,
+    "tests": 3
+  },
+  "files": [
+    "my_ecommerce_project/migrations/category_fixture.json",
+    "my_ecommerce_project/migrations/product_fixture.json",
+    "src/main.py",
+    "src/urls.py",
+    "my_ecommerce_project/migrations/apps.py",
+    "my_ecommerce_project/migrations/views.py",
+    "my_ecommerce_project/migrations/models.py",
+    "my_ecommerce_project/templates/product_list.html",
+    "my_ecommerce_project/templates/product_detail.html",
+    "my_ecommerce_project/static/styles.css",
+    "my_ecommerce_project/migrations/admin.py",
+    "my_ecommerce_project/migrations/services.py",
+    "src/wsgi.py",
+    ".env",
+    ".github/workflows/ci.yml",
+    "src/security_settings.py",
+    "src/asgi.py",
+    "src/logging.conf",
+    "src/performance_optimizations.py",
+    "src/monitoring.py",
+    "requirements.txt",
+    "my_ecommerce_project/docs/README.md",
+    "my_ecommerce_project/tests/test_models.py",
+    "my_ecommerce_project/tests/test_views.py",
+    "my_ecommerce_project/tests/test_forms.py",
+    "Dockerfile",
+    "docker-compose.yml",
+    "src/utils.py",
+    "my_ecommerce_project/migrations/settings.py"
+  ],
+  "metadata": {
+    "author": "QuantumLayer User",
+    "generatedBy": "QuantumLayer Platform",
+    "requestID": "gen-3f327ca1-e4a4-436a-af49-5491f92fe082",
+    "version": "1.0.0"
+  },
+  "project": {
+    "description": "Create an e-commerce platform with product catalog, shopping cart, payment integration, and admin panel",
+    "features": [
+      "Product catalog",
+      "Shopping cart",
+      "Payment integration",
+      "Admin panel"
+    ],
+    "framework": "django",
+    "language": "python",
+    "name": "gen-3f327ca1-e4a4-436a-af49-5491f92fe082",
+    "type": ""
+  }
+}

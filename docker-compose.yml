@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: gen3f327ca1
+      POSTGRES_USER: gen3f327ca1_user
+      POSTGRES_PASSWORD: secure_password
+    networks:
+      - gen3f327ca1_net
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    environment:
+      DEBUG: "True"
+      SECRET_KEY: your_secret_key_here
+      DATABASE_URL: postgres://gen3f327ca1_user:secure_password@db:5432/gen3f327ca1
+    depends_on:
+      - db
+    networks:
+      - gen3f327ca1_net
+
+  nginx:
+    image: nginx:1.19
+    ports:
+      - "80:80"
+    volumes:
+      - ./config/nginx:/etc/nginx/conf.d
+      - static_volume:/code/static
+    depends_on:
+      - web
+    networks:
+      - gen3f327ca1_net
+
+volumes:
+  postgres_data:
+  static_volume:
+
+networks:
+  gen3f327ca1_net:
+    driver: bridge

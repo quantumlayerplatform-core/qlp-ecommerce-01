@@ -1,0 +1,24 @@
+[
+    {
+        "model": "catalog.product",
+        "pk": 1,
+        "fields": {
+            "name": "High-End Laptop",
+            "category": 1,
+            "price": 1200.00,
+            "stock": 5,
+            "description": "A high-end laptop for professional use"
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 2,
+        "fields": {
+            "name": "Adventure Novel",
+            "category": 2,
+            "price": 15.00,
+            "stock": 100,
+            "description": "An exciting adventure novel"
+        }
+    }
+]
